@@ -1,2 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="">
+	<div class="text-3xl font-bold underline">타이틀 바</div>
+	<div>일감 목록</div>
+</div>
