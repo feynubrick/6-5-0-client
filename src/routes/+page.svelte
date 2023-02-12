@@ -44,7 +44,7 @@
 </script>
 
 <div class="">
-	<header class="sticky top-0 z-50 w-full bg-slate-800 text-white p-2">
+	<header class="sticky top-0 z-50 w-full bg-slate-800 text-white p-2 drop-shadow-xl">
 		<p class="align-middle text-center text-2xl">Rainbowowow</p>
 	</header>
 	<div class="flex flex-col justify-items-center space-y-3 p-1 mt-1">
