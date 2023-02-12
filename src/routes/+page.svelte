@@ -13,7 +13,7 @@
 			tags: ['뷰티'],
 			thumbnail: '/amore-pacific.jpg',
 			ageGroups: ['10대', '20대', '30대 초반'],
-			genders: Gender.FEMALE,
+			gender: Gender.FEMALE,
 			summary: '화장품을 사용하고 얼굴이 보이게 인증샷 & 후기를 작성'
 		},
 		{
@@ -21,7 +21,7 @@
 			tags: ['앱'],
 			thumbnail: '/adidas.png',
 			ageGroups: ['20대', '30대 초반'],
-			genders: Gender.BOTH,
+			gender: Gender.BOTH,
 			summary: '화장품을 사용하고 얼굴이 보이게 인증샷 & 후기를 작성'
 		},
 		{
@@ -29,7 +29,7 @@
 			tags: ['뷰티'],
 			thumbnail: '/amore-pacific.jpg',
 			ageGroups: ['10대', '20대', '30대 초반'],
-			genders: Gender.FEMALE,
+			gender: Gender.FEMALE,
 			summary: '화장품을 사용하고 얼굴이 보이게 인증샷 & 후기를 작성'
 		},
 		{
@@ -37,7 +37,7 @@
 			tags: ['앱'],
 			thumbnail: '/adidas.png',
 			ageGroups: ['20대', '30대 초반'],
-			genders: Gender.BOTH,
+			gender: Gender.BOTH,
 			summary: '화장품을 사용하고 얼굴이 보이게 인증샷 & 후기를 작성'
 		}
 	];
