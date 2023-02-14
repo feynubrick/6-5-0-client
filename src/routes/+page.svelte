@@ -47,6 +47,15 @@
 	<header class="sticky top-0 z-50 w-full bg-slate-800 text-white p-2 drop-shadow-xl">
 		<!-- <p class="align-middle text-center text-2xl">🌈Rainbowowow</p> -->
 		<p class="align-middle text-center text-2xl">🤣FUNction</p>
+		<button class="block">더보기</button>
+		<div class="bg-white text-black rounded-lg py-2 w-48 mt-2 shadow-2xl">
+			<a href="#" class="block px-4 py-2 text-slate-700 hover:bg-slate-700 hover:text-white"
+				>로그인</a
+			>
+			<a href="#" class="block px-4 py-2 text-slate-700 hover:bg-slate-700 hover:text-white"
+				>더보기</a
+			>
+		</div>
 	</header>
 	<div class="flex flex-col justify-items-center space-y-3 p-1 mt-1">
 		{#each jobs as job}
