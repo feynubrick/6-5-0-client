@@ -11,10 +11,10 @@
 		<MenuIcon color="white" size="32" />
 	</button>
 	{#if isOpen}
-		<div class="absolute right-1 bg-white text-black rounded-lg py-2 w-48 mt-2 shadow-2xl">
+		<div class="absolute right-1 bg-white text-black rounded-lg py-2 w-24 mt-2 shadow-2xl">
 			<a
 				href="/sign-in"
-				class="block px-4 py-2 text-slate-700 hover:bg-slate-700 hover:text-white"
+				class="block px-4 py-2 text-slate-700 hover:bg-slate-700 hover:text-white text-center"
 				on:click={onClickMenuButton}>로그인</a
 			>
 		</div>
