@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<div class="bg-slate-200 w-full h-full p-1">
+<div class="bg-slate-200 w-full min-h-screen p-1 grid grid-cols-1 content-between">
 	<div class="w-full flex justify-center">
 		<img src={data.thumbnail} alt={data.thumbnail} class="object-contain w-48 h-48 rounded-3xl" />
 	</div>
@@ -27,8 +27,8 @@
 			<span class="font-bold">· 업무내용:</span>
 			<span class="">{data.summary}</span>
 		</div>
-		<button class="bg-slate-500 text-white rounded-sm px-2 py-1 text-lg font-bold w-full"
-			>신청하기</button
-		>
 	</div>
+	<button class="bg-slate-500 text-white rounded-sm px-2 py-1 text-lg font-bold w-full"
+		>신청하기</button
+	>
 </div>
