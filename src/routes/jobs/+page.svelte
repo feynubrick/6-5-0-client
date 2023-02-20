@@ -1,5 +1,5 @@
 <script>
-	import JobCard from '../components/JobCard.svelte';
+	import JobCard from '../../components/JobCard.svelte';
 	export let data;
 </script>
 
