@@ -1,4 +1,4 @@
-import { getJobList } from '../../common/data.js';
+import { getJobList } from '../../common/db.js';
 
 export async function load() {
 	return {

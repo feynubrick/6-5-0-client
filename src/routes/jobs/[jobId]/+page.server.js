@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getJob } from '../../../common/data';
+import { getJob } from '../../../common/db';
 
 export async function load({ params }) {
 	const jobData = await getJob(params.jobId);

@@ -38,6 +38,15 @@ const data = {
 			gender: Gender.BOTH,
 			summary: '화장품을 사용하고 얼굴이 보이게 인증샷 & 후기를 작성'
 		}
+	],
+	users: [
+		{
+			id: 1,
+			email: 'abc@email.com',
+			password: 'hashedpassword',
+			type: 'admin',
+			session: ''
+		}
 	]
 };
 
@@ -52,6 +61,27 @@ export const getJob = async function (jobId) {
 		}
 	}
 	return null;
+};
+
+export const getUser = async function (email) {
+	for (let user of data.users) {
+		if (user.email === email) {
+			return user;
+		}
+	}
+	return null;
+};
+
+export const updateUserSession = async function (userId, session) {
+	const userIndex = data.users.findIndex((user) => user.id === userId);
+	data.users[userIndex].session = session;
+	return data.users[userIndex];
+};
+
+export const createSession = async function (user) {
+	const sessionid = `${user.id}${new Date()}`;
+	const updatedUser = await updateUserSession(user.id, sessionid);
+	return sessionid;
 };
 
 export default data;
