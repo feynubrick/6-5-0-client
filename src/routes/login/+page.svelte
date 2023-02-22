@@ -4,7 +4,7 @@
 <div class="container h-full px-6 py-12">
 	<div class="flex justify-center items-center flex-wrap h-full gap-6">
 		<div class="w-full px-10">
-			<form method="post">
+			<form method="post" action="?/login">
 				<!-- ID -->
 				<div class="mb-6">
 					<label for="email">Email</label>
