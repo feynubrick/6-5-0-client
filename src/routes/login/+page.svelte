@@ -1,10 +1,15 @@
 <script>
+	export let form;
 </script>
 
 <div class="container h-full px-6 py-12">
 	<div class="flex justify-center items-center flex-wrap h-full gap-6">
 		<div class="w-full px-10">
 			<form method="post" action="?/login">
+				{#if form?.missing}<p class="text-red-500 text-sm">
+						뭔가 안보내셨네요...? 확인해주세요!
+					</p>{/if}
+				{#if form?.incorrect}<p class="text-red-500">Invalid credentials!</p>{/if}
 				<!-- ID -->
 				<div class="mb-6">
 					<label for="email">Email</label>
