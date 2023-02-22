@@ -45,7 +45,7 @@ const data = {
 			email: 'abc@email.com',
 			password: 'hashedpassword',
 			type: 'admin',
-			session: ''
+			sessionid: ''
 		}
 	]
 };
@@ -72,9 +72,18 @@ export const getUser = async function (email) {
 	return null;
 };
 
-export const updateUserSession = async function (userId, session) {
+export const getUserWithSessionId = async function (sessionid) {
+	for (let user of data.users) {
+		if (user.sessionid === sessionid) {
+			return user;
+		}
+	}
+	return null;
+};
+
+export const updateUserSession = async function (userId, sessionid) {
 	const userIndex = data.users.findIndex((user) => user.id === userId);
-	data.users[userIndex].session = session;
+	data.users[userIndex].sessionid = sessionid;
 	return data.users[userIndex];
 };
 
