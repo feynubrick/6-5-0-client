@@ -14,8 +14,9 @@ export const actions = {
 		const user = await getUser(email);
 		cookies.set('sessionid', await createSession(user));
 		locals.user = user;
-		// throw redirect(303, '/');
-		return { success: true };
+		// TODO: 하드코드한 url 말고 알아서 url 가져오도록 변경하기
+		throw redirect(303, '/accounts/me');
+		// return { success: true };
 	},
 	logout: async (event) => {
 		const user = event.locals.user;
@@ -24,7 +25,8 @@ export const actions = {
 			event.locals.user = null;
 			await removeSession(user);
 		}
-		// throw redirect(303, '/accounts/me');
+		// TODO: 하드코드한 url 말고 알아서 url 가져오도록 변경하기
+		throw redirect(303, '/accounts/me');
 	}
 };
 
