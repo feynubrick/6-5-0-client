@@ -93,4 +93,9 @@ export const createSession = async function (user) {
 	return sessionid;
 };
 
+export const removeSession = async function (user) {
+	const updatedUser = await updateUserSession(user.id, null);
+	return null;
+};
+
 export default data;
