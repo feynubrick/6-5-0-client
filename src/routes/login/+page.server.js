@@ -16,3 +16,11 @@ export const actions = {
 		throw redirect(303, '/');
 	}
 };
+
+export async function load(event) {
+	console.log('event.locals.user: ', event.locals.user);
+	console.log('event: ', event.data.user);
+	return {
+		user: event.locals.user
+	};
+}
