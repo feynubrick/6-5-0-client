@@ -1,4 +1,6 @@
 <script>
+	// import { page } from '$app/stores';
+	// const user = $page.data.user;
 	export let form;
 	export let data;
 	const user = data.user;
@@ -9,6 +11,14 @@
 		<div class="w-full px-10">
 			{#if user}
 				<p>환영합니다! {user.email}님!</p>
+				<form method="post" action="?/logout">
+					<button
+						type="submit"
+						class="inline-block px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md bg-slate-600 ease-in-out w-full"
+					>
+						로그 아웃
+					</button>
+				</form>
 			{:else}
 				<form method="post" action="?/login">
 					{#if form?.missing}
@@ -40,8 +50,9 @@
 					<button
 						type="submit"
 						class="inline-block px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md bg-slate-600 ease-in-out w-full"
-						>Sign In</button
 					>
+						Sign In
+					</button>
 				</form>
 			{/if}
 		</div>
