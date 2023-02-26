@@ -28,7 +28,7 @@
 			<span class="">{data.summary}</span>
 		</div>
 	</div>
-	<button class="bg-slate-500 text-white rounded-sm px-2 py-1 text-lg font-bold w-full"
-		>신청하기</button
-	>
+	<button class="bg-slate-500 text-white rounded-sm px-2 py-1 text-lg font-bold w-full">
+		신청하기
+	</button>
 </div>

@@ -1,7 +1,7 @@
 import { Gender } from './constants.js';
 
 const data = {
-	jobs: [
+	campaigns: [
 		{
 			id: 'AHBHAIHDSF',
 			title: '아모레 퍼시픽',
@@ -50,14 +50,14 @@ const data = {
 	]
 };
 
-export const getJobList = async function () {
-	return data.jobs;
+export const getCampaignList = async function () {
+	return data.campaigns;
 };
 
-export const getJob = async function (jobId) {
-	for (let job of data.jobs) {
-		if (job.id === jobId) {
-			return job;
+export const getCampaign = async function (campaignId) {
+	for (let campaign of data.campaigns) {
+		if (campaign.id === campaignId) {
+			return campaign;
 		}
 	}
 	return null;
