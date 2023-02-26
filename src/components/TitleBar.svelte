@@ -9,7 +9,9 @@
 			<a href="/jobs">
 				<img src="/short-logo-red.png" alt="short-logo-red" class="h-8" />
 			</a>
-			<p class="align-middle text-left text-2xl font-semibold">Joyfluencer</p>
+			<a href="/jobs">
+				<p class="align-middle text-left text-2xl font-semibold">Function</p>
+			</a>
 		</div>
 		<div class="grow flex justify-end">
 			<DropDownMenu />
