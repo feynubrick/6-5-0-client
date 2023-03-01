@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '$APP_PORT:$APP_PORT'
+      - '24678:24678'
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src

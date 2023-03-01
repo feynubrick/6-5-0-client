@@ -7,5 +7,4 @@ RUN npm install
 COPY . ./
 RUN npm run build
 
-EXPOSE 5173
-ENTRYPOINT "run.sh"
+ENTRYPOINT ["./run.sh"]

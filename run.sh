@@ -1,10 +1,15 @@
 #!/bin/bash
-echo "RUN_ENV: $RUN_ENV"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<<<"
+printenv;
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ""
 
-if [ $RUN_ENV = "production" ]
+if [ "$RUN_ENV" = "production" ]
 then
-    npm run build;
+    echo "running node server..."
     node build;
 else
-    npm run dev
+    echo "running dev server..."
+    # npm run dev --host $APP_HOST --port $APP_PORT;
+    npx vite dev --host --port $APP_PORT;
 fi

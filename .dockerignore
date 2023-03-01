@@ -1,0 +1,9 @@
+Dockerfile
+README.md
+LICENSE
+
+.gitignore
+**/.git
+
+build
+node_modules
