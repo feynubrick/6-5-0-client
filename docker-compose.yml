@@ -6,8 +6,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - '$APP_PORT:$APP_PORT'
-      - '24678:24678'
+      - '24678:24678' # for Vite HMR API
     env_file:
       - .env
+    restart: on-failure
     volumes:
       - ./src:/app/src
+  nginx:
+    build: ./nginx
+    ports:
+      - '80:80'
+    depends_on:
+      - app
